@@ -1,15 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'europa-illustration': 'url(/europa_surface_illustration.jpg)',
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'transparent': 'rgba(0, 0, 0, 0)',
+        'interactive': 'var(--nebula-orange)', // nebula orange
+        'text': 'var(--text-white)',           // starlight white
+        'muted-gold': 'var(--muted-gold)',
       },
     },
   },
